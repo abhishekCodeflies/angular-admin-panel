@@ -1,0 +1,16 @@
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        max-width: 200px;
+    }
+
+    ul{
+        li{
+            display: inline-block;
+            padding: 0 10px;
+        }
+    }
+}

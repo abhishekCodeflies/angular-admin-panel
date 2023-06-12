@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { EmailVerificationComponent } from './email-verification/email-verification.component';
 
 
 
@@ -10,7 +11,8 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
   declarations: [
     LoginComponent,
     SignupComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    EmailVerificationComponent
   ],
   imports: [
     CommonModule

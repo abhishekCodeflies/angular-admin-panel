@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  isResponsive = false;
 
+  @HostListener('window:resize', [])
+  onWindowResize(){
+    this.checkResponsive();
+  }
+
+  ngOnInit(){
+    this.checkResponsive();
+  }
+
+  checkResponsive(){
+    this.isResponsive = window.innerWidth < 768;
+  }
 }
